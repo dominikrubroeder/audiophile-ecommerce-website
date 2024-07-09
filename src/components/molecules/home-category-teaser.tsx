@@ -3,19 +3,19 @@ import Link from "next/link";
 
 const categories = [
   {
-    image: "/product-teaser-headphones.jpg",
+    image: "/category-teaser-headphones.jpg",
     title: "Headphones",
     href: "/shop/headphones",
     hrefLabel: "Shop",
   },
   {
-    image: "/product-teaser-speaker.png",
+    image: "/category-teaser-speaker.png",
     title: "Speaker",
     href: "/shop/speaker",
     hrefLabel: "Shop",
   },
   {
-    image: "/product-teaser-earphones.png",
+    image: "/category-teaser-earphones.png",
     title: "Earphones",
     href: "/shop/earphones",
     hrefLabel: "Shop",
