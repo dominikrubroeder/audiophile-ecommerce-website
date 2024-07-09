@@ -40,6 +40,14 @@ body {
     h6 {
         @apply uppercase text-lg tracking-[1.29px] font-bold;
     }
+
+    .overline {
+        @apply uppercase text-[.875rem] leading-[1.5625rem] tracking-[10px];
+    }
+
+    .sub-title {
+        @apply uppercase text-[.8125rem] leading-[1.5625rem] tracking-[1px] font-bold;
+    }
 }
 
 @layer utilities {
