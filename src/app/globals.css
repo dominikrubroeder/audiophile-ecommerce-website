@@ -3,31 +3,47 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+    --foreground: 0, 0, 0;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+    :root {
+        --foreground-rgb: 255, 255, 255;
+    }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    color: rgb(var(--foreground-rgb));
+}
+
+@layer base {
+    h1 {
+        @apply uppercase text-[3.5rem] leading-[3.625rem] tracking-[2px] font-bold;
+    }
+
+    h2 {
+        @apply uppercase text-[2.5rem] leading-[2.625rem] tracking-[1.4px] font-bold;
+    }
+
+    h3 {
+        @apply uppercase text-[2rem] leading-[2.25rem] tracking-[1.4px] font-bold;
+    }
+
+    h4 {
+        @apply uppercase text-[1.75rem] tracking-[2px] font-bold;
+    }
+
+    h5 {
+        @apply uppercase text-2xl tracking-[1.7px] font-bold;
+    }
+
+    h6 {
+        @apply uppercase text-lg tracking-[1.29px] font-bold;
+    }
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+    .text-balance {
+        text-wrap: balance;
+    }
 }
